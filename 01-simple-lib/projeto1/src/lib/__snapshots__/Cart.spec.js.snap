@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cart checkout() should return an object with the total and the list of items 1`] = `
+Object {
+  "items": Array [
+    Object {
+      "product": Object {
+        "price": 35388,
+        "title": "Adidas running shoes - men",
+      },
+      "quantity": 2,
+    },
+    Object {
+      "product": Object {
+        "price": 41872,
+        "title": "Adidas running shoes - women",
+      },
+      "quantity": 3,
+    },
+  ],
+  "total": 196392,
+}
+`;
+
+exports[`Cart checkout() should return an object with the total and the list of items when summary() is called 1`] = `
+Object {
+  "formatted": "R$1,963.92",
+  "items": Array [
+    Object {
+      "product": Object {
+        "price": 35388,
+        "title": "Adidas running shoes - men",
+      },
+      "quantity": 2,
+    },
+    Object {
+      "product": Object {
+        "price": 41872,
+        "title": "Adidas running shoes - women",
+      },
+      "quantity": 3,
+    },
+  ],
+  "total": Object {
+    "amount": 196392,
+    "currency": "BRL",
+    "precision": 2,
+  },
+}
+`;
